@@ -1,0 +1,30 @@
+.link {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
+  color: #FFFFFF;
+  transition: all .3s ease;
+
+  &:hover {
+    text-decoration-line: underline;
+    color: #26C7BC;
+  }
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 15px 50px;
+  background: linear-gradient(80.46deg, #ADE6E0 -0.68%, #26C7BC 100%);
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+  transition: all .3s ease;
+
+  &:hover {
+    // background: #26C7BC;
+    background: linear-gradient(80.46deg, #26C7BC -0.68%, #26C7BC 100%);
+  }
+}

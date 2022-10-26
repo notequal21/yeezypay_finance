@@ -1,0 +1,52 @@
+// -------- imports --------
+@import "fonts";
+@import "components/_fonts";
+@import "components/_normalize.scss";
+@import "components/_mixins.scss";
+@import "components/_variables.scss";
+@import "components/_variables.scss";
+@import "components/_header.scss";
+@import "components/_footer.scss";
+@import "components/_ui.scss";
+@import "pages/index/_main.scss";
+@import "pages/index/_terms.scss";
+@import "pages/index/_service.scss";
+@import "pages/index/_getstarted.scss";
+
+// fonts --------- &display=swap || &subset=cyrillic-ext
+// throught plugin
+
+
+::selection {}
+
+body {
+  overflow: auto;
+
+  background-color: #0E141E;
+  font-family: 'Jost';
+}
+
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  @media (max-width:1200px) {
+    padding: 0 20px;
+  }
+
+  @media (max-width:767px) {
+    padding: 0 15px;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1 auto;
+}
