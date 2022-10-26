@@ -9,9 +9,9 @@
 @import "components/_footer.scss";
 @import "components/_ui.scss";
 @import "pages/index/_main.scss";
-@import "pages/index/_terms.scss";
-@import "pages/index/_service.scss";
 @import "pages/index/_getstarted.scss";
+@import "pages/index/_benefits.scss";
+@import "pages/index/_who.scss";
 
 // fonts --------- &display=swap || &subset=cyrillic-ext
 // throught plugin
@@ -32,7 +32,7 @@ body {
   padding: 0 40px;
 
   @media (max-width:1200px) {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
   @media (max-width:767px) {

@@ -1,49 +1,130 @@
 .getstarted {
 
   &.contactus {
-    margin: 50px 0 0;
+    margin: 100px 0 0;
 
     @media (max-width:1500px) {
-      margin: 30px 0 0;
+      margin: 75px 0 0;
+    }
+
+    @media (max-width:1200px) {
+      margin: 50px 0 0;
     }
 
     .getstarted-body {
-      background: #2DC9BE;
-    }
+      padding: 57px 57px;
+      background: linear-gradient(80.46deg, #26C7BC -0.68%, #ADE6E0 100%);
 
-    .getstarted__title {
-      color: #141C29;
+      @media (max-width:1500px) {
+        padding: 57px 50px;
+      }
 
-      @media (max-width:1023px) {
-        max-width: 670px;
-        line-height: 48px;
+      @media (max-width:1200px) {
+        padding: 40px;
       }
 
       @media (max-width:767px) {
+        padding: 30px;
+      }
+
+      &__bg-item {
+        img {
+          &._tablet {
+            display: none;
+          }
+
+          &._mobile {
+            display: none;
+          }
+        }
+
+        @media (max-width:1200px) {
+          // width: 395px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: bottom right;
+            display: none;
+
+            &._tablet {
+              display: block;
+            }
+          }
+        }
+
+        @media (max-width:767px) {
+          // width: 395px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: bottom right;
+            display: none;
+
+            &._tablet {
+              display: none;
+            }
+
+            &._mobile {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .getstarted__title {
+      @media (max-width:1500px) {
+        font-size: 45px;
+        line-height: 55px;
+      }
+
+      @media (max-width:1200px) {
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+
+    .getstarted__subtitle {
+      color: #FFFFFF;
+
+      @media (max-width:1500px) {
+        font-size: 24px;
         line-height: 35px;
+      }
+
+      @media (max-width:1200px) {
+        font-size: 20px;
+        line-height: 29px;
+      }
+
+      @media (max-width:767px) {
+        line-height: 25px;
       }
     }
 
     .getstarted__btn {
-      // position: relative;
-      // z-index: 1;
       display: flex;
       align-items: center;
       border: 2px solid #FFFFFF;
       border-radius: 40px;
       background: transparent;
-      padding: 16.5px 50px;
-      // margin: 42px 0 0;
+      font-size: 18px;
+      margin: 30px 0 0;
 
-      // @media (max-width:1500px) {
-      //   margin: 47px 0 0;
-      // }
+      @media (max-width:1200px) {
+        margin: 20px 0 0;
+      }
 
-      // @media (max-width:767px) {
-      //   margin: 30px 0 0;
-      // }
+      @media (max-width:767px) {
+        margin: 20px auto 0;
+      }
 
       svg {
+        width: 20px;
         margin: 0 10px 0 0;
         fill: #FFFFFF;
         transition: all .3s ease;
@@ -61,21 +142,22 @@
   }
 
   &-body {
-    padding: 65px 0;
+    padding: 60px 50px;
     background: #141C29;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
     overflow: hidden;
 
     @media (max-width:1500px) {
-      padding: 60px 0;
+      padding: 55px 50px;
     }
 
     @media (max-width:767px) {
-      padding: 40px;
+      padding: 30px;
+      align-items: center;
     }
 
     &__bg {
@@ -121,6 +203,13 @@
             }
           }
         }
+
+        &.right {
+          left: auto;
+          right: 0;
+          top: 0;
+          bottom: 0;
+        }
       }
     }
   }
@@ -129,8 +218,8 @@
     position: relative;
     z-index: 1;
     font-weight: 700;
-    font-size: 50px;
-    line-height: 72px;
+    font-size: 45px;
+    line-height: 55px;
     color: #FFFFFF;
     text-align: center;
 
@@ -146,10 +235,11 @@
   }
 
   &__subtitle {
+    margin: 5px 0 0;
     position: relative;
     z-index: 1;
-    font-size: 30px;
-    line-height: 43px;
+    font-size: 24px;
+    line-height: 35px;
     color: #141C29;
     text-align: center;
 
